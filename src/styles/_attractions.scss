@@ -5,15 +5,17 @@
         margin-top: 30px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
 
         &__item {
             width: 280px;
-            background-color: #e6e6e6;
+            background-color: #aaaaaa;
+            margin-top: 20px;
             padding-bottom: 20px;
+
+            &:hover {
+                transform: translateY(-8px);
+            }
         }
     }
-}
-
-.band-img:hover {
-    transform: translateY(-8px);
 }
