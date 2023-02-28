@@ -22,6 +22,27 @@
     &__text {
         padding-bottom: 70px;
     }
+
+    &__confirmation-button {
+        display: block;
+        margin: 30px auto 0;
+        width: 300px;
+        height: 60px;
+        font-size: 18px;
+        text-transform: uppercase;
+        background-color: #165d79;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all .5s ease;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+        &:hover {
+            background-color: lighten(#165d79, 5%);
+            transform: scale(1.05);
+        }
+    }
 }
 
 .img-container {
