@@ -1,0 +1,19 @@
+.attractions {
+    margin-top: 100px;
+
+    &__box {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+
+        &__item {
+            width: 280px;
+            background-color: #e6e6e6;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.band-img:hover {
+    transform: translateY(-8px);
+}

@@ -1,14 +1,12 @@
+@use 'variables';
+
 .welcome {
-    background-color: #fff;
-    margin-top: 10%;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 8%;
 
     &__image {
         border-radius: 50%;
         transform: translateY(-70px);
-        border: 6px solid #fff;
+        border: 6px solid variables.$corNeutra;
         width: 200px;
     }
 
@@ -16,22 +14,21 @@
         margin-top: 20px;
         margin-bottom: 30px;
         text-transform: uppercase;
-        color: #165d79;
     }
 
     &__text {
-        padding-bottom: 70px;
+        padding-bottom: 20px;
     }
 
     &__confirmation-button {
         display: block;
-        margin: 30px auto 0;
+        margin: 20px auto;
         width: 300px;
         height: 60px;
         font-size: 18px;
         text-transform: uppercase;
-        background-color: #165d79;
-        color: #fff;
+        background-color: variables.$corDoTitulo;
+        color: variables.$corNeutra;
         border: none;
         border-radius: 10px;
         cursor: pointer;
@@ -39,7 +36,7 @@
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 
         &:hover {
-            background-color: lighten(#165d79, 5%);
+            background-color: lighten(variables.$corDoTitulo, 5%);
             transform: scale(1.05);
         }
     }
@@ -47,4 +44,9 @@
 
 .img-container {
     height: 130px;
+}
+
+.date {
+    font-size: 16px;
+    color: #636363;
 }
