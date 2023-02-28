@@ -10,3 +10,9 @@
         color: variables.$corDoTitulo;
     }
 }
+
+@media (max-width: 767px) {
+    .footer {
+        padding: 0 20px;
+    }
+}

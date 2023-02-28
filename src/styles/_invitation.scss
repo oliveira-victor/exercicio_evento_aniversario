@@ -2,3 +2,9 @@
     margin-top: 100px;
     font-size: 20px;
 }
+
+@media (max-width: 767px) {
+    .invitation {
+        font-size: 1em;
+    }
+}

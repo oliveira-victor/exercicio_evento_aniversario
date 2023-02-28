@@ -19,3 +19,11 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .attractions {
+        &__box {
+            justify-content: center;
+        }
+    }
+}
