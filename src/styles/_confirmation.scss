@@ -1,0 +1,49 @@
+@use 'variables';
+
+.confirmation {
+    display: none;
+    margin-top: 20px;
+
+    .campo-nome {
+        width: 30%;
+        height: 60px;
+        padding: 8px;
+        font-size: 20px;
+        outline-color: variables.$corDoTitulo;
+    }
+}
+
+.final-button {
+    margin: 20px auto;
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: variables.$corDoTitulo;
+    color: variables.$corNeutra;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s ease;
+
+    &:hover {
+        background-color: lighten(variables.$corDoTitulo, 5%);
+        transform: scale(1.05);
+    }
+}
+
+#erro-confirmacao {
+    font-size: 20px;
+    color: #b42b2b;
+}
+
+.success {
+    color: #249e48;
+}
+
+.random-number {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: variables.$corDoTitulo;
+}
