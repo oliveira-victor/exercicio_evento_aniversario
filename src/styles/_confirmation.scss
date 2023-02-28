@@ -4,7 +4,7 @@
     display: none;
     margin-top: 20px;
 
-    .campo-nome {
+    .campo-nome, .campo-email {
         width: 30%;
         height: 60px;
         padding: 8px;
@@ -50,12 +50,12 @@
 
 @media (max-width: 767px) {
     .confirmation {
-        
+
         h2 {
             margin-bottom: 20px;
         }
 
-        .campo-nome {
+        .campo-nome, .campo-email {
             display: block;
             width: 90%;
             margin: 10px auto;

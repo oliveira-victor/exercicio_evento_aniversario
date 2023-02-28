@@ -32,10 +32,12 @@ document.getElementById('form-confirm').addEventListener('submit', function(even
     evento.preventDefault();
     
     const convidado = document.querySelector('.campo-nome');
+    const email = document.querySelector('.campo-email');
 
     let randomNumber = Math.random() * 5000;
         randomNumber = Math.floor(randomNumber + 1);
 
-        document.getElementById('confirmado').innerHTML = `<span class="success">Obrigado, <b>${convidado.value}</b>! aguardo sua presença. Por favor, lembre-se de levar seu documento de identidade e esse código no dia do evento: <br><span class="random-number">${randomNumber}</span></span>`
+        document.getElementById('confirmado').innerHTML = `<span class="success">Obrigado, <b>${convidado.value}</b>! aguardo sua presença. Um email foi enviado para <u>${email.value}</u>. Por favor, lembre-se de levar seu documento de identidade e esse código no dia do evento: <br><span class="random-number">${randomNumber}</span></span>`
         convidado.value = ''
+        email.value = ''
 })
